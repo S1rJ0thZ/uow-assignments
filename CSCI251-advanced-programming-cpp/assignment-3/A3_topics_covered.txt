@@ -1,4 +1,8 @@
-A3 topics
+# A3 topics
+
 1) comparators and STL <algorithm>  + containers  (use for sorting)
+
 2) vector for file io
+
 3) Function templates (requires operator overloading)
+    * Compile-time polymorphism

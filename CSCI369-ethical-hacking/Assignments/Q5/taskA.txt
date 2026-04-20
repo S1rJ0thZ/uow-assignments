@@ -1,0 +1,170 @@
+# Nmap 7.95 scan initiated Mon Feb 23 15:00:35 2026 as: /usr/lib/nmap/nmap -vvvv -sU -p 12345-12500 -oN taskA.txt 10.0.2.4
+Increasing send delay for 10.0.2.4 from 50 to 100 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 10.0.2.4 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.0.2.4 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.0.2.4 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.0.2.4 (10.0.2.4)
+Host is up, received arp-response (0.0010s latency).
+Scanned at 2026-02-23 15:00:35 +08 for 111s
+
+PORT      STATE         SERVICE REASON
+12345/udp closed        italk   port-unreach ttl 64
+12346/udp open|filtered unknown no-response
+12347/udp closed        unknown port-unreach ttl 64
+12348/udp closed        unknown port-unreach ttl 64
+12349/udp closed        unknown port-unreach ttl 64
+12350/udp open|filtered unknown no-response
+12351/udp open|filtered unknown no-response
+12352/udp closed        unknown port-unreach ttl 64
+12353/udp open|filtered unknown no-response
+12354/udp closed        unknown port-unreach ttl 64
+12355/udp closed        unknown port-unreach ttl 64
+12356/udp closed        unknown port-unreach ttl 64
+12357/udp closed        unknown port-unreach ttl 64
+12358/udp open|filtered unknown no-response
+12359/udp open|filtered unknown no-response
+12360/udp open|filtered unknown no-response
+12361/udp open|filtered unknown no-response
+12362/udp closed        unknown port-unreach ttl 64
+12363/udp closed        unknown port-unreach ttl 64
+12364/udp closed        unknown port-unreach ttl 64
+12365/udp closed        unknown port-unreach ttl 64
+12366/udp closed        unknown port-unreach ttl 64
+12367/udp open|filtered unknown no-response
+12368/udp closed        unknown port-unreach ttl 64
+12369/udp closed        unknown port-unreach ttl 64
+12370/udp open|filtered unknown no-response
+12371/udp open|filtered unknown no-response
+12372/udp open|filtered unknown no-response
+12373/udp closed        unknown port-unreach ttl 64
+12374/udp closed        unknown port-unreach ttl 64
+12375/udp closed        unknown port-unreach ttl 64
+12376/udp closed        unknown port-unreach ttl 64
+12377/udp closed        unknown port-unreach ttl 64
+12378/udp closed        unknown port-unreach ttl 64
+12379/udp closed        unknown port-unreach ttl 64
+12380/udp closed        unknown port-unreach ttl 64
+12381/udp open|filtered unknown no-response
+12382/udp closed        unknown port-unreach ttl 64
+12383/udp open|filtered unknown no-response
+12384/udp closed        unknown port-unreach ttl 64
+12385/udp closed        unknown port-unreach ttl 64
+12386/udp closed        unknown port-unreach ttl 64
+12387/udp open|filtered unknown no-response
+12388/udp closed        unknown port-unreach ttl 64
+12389/udp closed        unknown port-unreach ttl 64
+12390/udp closed        unknown port-unreach ttl 64
+12391/udp closed        unknown port-unreach ttl 64
+12392/udp open|filtered unknown no-response
+12393/udp closed        unknown port-unreach ttl 64
+12394/udp open|filtered unknown no-response
+12395/udp open          unknown udp-response ttl 64
+12396/udp closed        unknown port-unreach ttl 64
+12397/udp closed        unknown port-unreach ttl 64
+12398/udp closed        unknown port-unreach ttl 64
+12399/udp closed        unknown port-unreach ttl 64
+12400/udp closed        unknown port-unreach ttl 64
+12401/udp closed        unknown port-unreach ttl 64
+12402/udp closed        unknown port-unreach ttl 64
+12403/udp closed        unknown port-unreach ttl 64
+12404/udp closed        unknown port-unreach ttl 64
+12405/udp closed        unknown port-unreach ttl 64
+12406/udp closed        unknown port-unreach ttl 64
+12407/udp closed        unknown port-unreach ttl 64
+12408/udp closed        unknown port-unreach ttl 64
+12409/udp closed        unknown port-unreach ttl 64
+12410/udp closed        unknown port-unreach ttl 64
+12411/udp closed        unknown port-unreach ttl 64
+12412/udp closed        unknown port-unreach ttl 64
+12413/udp closed        unknown port-unreach ttl 64
+12414/udp closed        unknown port-unreach ttl 64
+12415/udp closed        unknown port-unreach ttl 64
+12416/udp closed        unknown port-unreach ttl 64
+12417/udp closed        unknown port-unreach ttl 64
+12418/udp open|filtered unknown no-response
+12419/udp closed        unknown port-unreach ttl 64
+12420/udp closed        unknown port-unreach ttl 64
+12421/udp open|filtered unknown no-response
+12422/udp closed        unknown port-unreach ttl 64
+12423/udp closed        unknown port-unreach ttl 64
+12424/udp closed        unknown port-unreach ttl 64
+12425/udp closed        unknown port-unreach ttl 64
+12426/udp open|filtered unknown no-response
+12427/udp closed        unknown port-unreach ttl 64
+12428/udp closed        unknown port-unreach ttl 64
+12429/udp open|filtered unknown no-response
+12430/udp closed        unknown port-unreach ttl 64
+12431/udp closed        unknown port-unreach ttl 64
+12432/udp closed        unknown port-unreach ttl 64
+12433/udp closed        unknown port-unreach ttl 64
+12434/udp open|filtered unknown no-response
+12435/udp closed        unknown port-unreach ttl 64
+12436/udp closed        unknown port-unreach ttl 64
+12437/udp closed        unknown port-unreach ttl 64
+12438/udp closed        unknown port-unreach ttl 64
+12439/udp open|filtered unknown no-response
+12440/udp open|filtered unknown no-response
+12441/udp open|filtered unknown no-response
+12442/udp open|filtered unknown no-response
+12443/udp closed        unknown port-unreach ttl 64
+12444/udp closed        unknown port-unreach ttl 64
+12445/udp closed        unknown port-unreach ttl 64
+12446/udp open|filtered unknown no-response
+12447/udp closed        unknown port-unreach ttl 64
+12448/udp closed        unknown port-unreach ttl 64
+12449/udp open|filtered unknown no-response
+12450/udp closed        unknown port-unreach ttl 64
+12451/udp closed        unknown port-unreach ttl 64
+12452/udp closed        unknown port-unreach ttl 64
+12453/udp closed        unknown port-unreach ttl 64
+12454/udp closed        unknown port-unreach ttl 64
+12455/udp open|filtered unknown no-response
+12456/udp closed        unknown port-unreach ttl 64
+12457/udp closed        unknown port-unreach ttl 64
+12458/udp open|filtered unknown no-response
+12459/udp open|filtered unknown no-response
+12460/udp closed        unknown port-unreach ttl 64
+12461/udp open|filtered unknown no-response
+12462/udp closed        unknown port-unreach ttl 64
+12463/udp closed        unknown port-unreach ttl 64
+12464/udp closed        unknown port-unreach ttl 64
+12465/udp open|filtered unknown no-response
+12466/udp closed        unknown port-unreach ttl 64
+12467/udp closed        unknown port-unreach ttl 64
+12468/udp closed        unknown port-unreach ttl 64
+12469/udp closed        unknown port-unreach ttl 64
+12470/udp closed        unknown port-unreach ttl 64
+12471/udp closed        unknown port-unreach ttl 64
+12472/udp closed        unknown port-unreach ttl 64
+12473/udp closed        unknown port-unreach ttl 64
+12474/udp open|filtered unknown no-response
+12475/udp open|filtered unknown no-response
+12476/udp closed        unknown port-unreach ttl 64
+12477/udp closed        unknown port-unreach ttl 64
+12478/udp closed        unknown port-unreach ttl 64
+12479/udp closed        unknown port-unreach ttl 64
+12480/udp closed        unknown port-unreach ttl 64
+12481/udp closed        unknown port-unreach ttl 64
+12482/udp closed        unknown port-unreach ttl 64
+12483/udp open|filtered unknown no-response
+12484/udp closed        unknown port-unreach ttl 64
+12485/udp open|filtered unknown no-response
+12486/udp open|filtered unknown no-response
+12487/udp closed        unknown port-unreach ttl 64
+12488/udp closed        unknown port-unreach ttl 64
+12489/udp open|filtered unknown no-response
+12490/udp open|filtered unknown no-response
+12491/udp closed        unknown port-unreach ttl 64
+12492/udp closed        unknown port-unreach ttl 64
+12493/udp open|filtered unknown no-response
+12494/udp closed        unknown port-unreach ttl 64
+12495/udp open|filtered unknown no-response
+12496/udp closed        unknown port-unreach ttl 64
+12497/udp open|filtered unknown no-response
+12498/udp closed        unknown port-unreach ttl 64
+12499/udp closed        unknown port-unreach ttl 64
+12500/udp closed        unknown port-unreach ttl 64
+MAC Address: 08:00:27:06:0A:BA (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/share/nmap
+# Nmap done at Mon Feb 23 15:02:26 2026 -- 1 IP address (1 host up) scanned in 111.45 seconds

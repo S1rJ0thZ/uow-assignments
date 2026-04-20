@@ -1,0 +1,5 @@
+File line 10: Invalid resale_price:-10.0
+File line 11: Invalid floor_area_sqm:BIG
+File line 14: Invalid floor_area_sqm:5X
+File line 17: Invalid resale_price:-200000.0
+File line 21: Invalid resale_price:Expensive

@@ -1,0 +1,12 @@
+File line 10: Price must be a positive integer:-10
+File line 11: Area must be an integer:BIG
+File line 14: Area must be an integer:5X
+File line 17: Price must be a positive integer:-200000
+File line 21: Price must be an integer:Expensive
+File line 2751: Area must be an integer:60.3
+File line 2753: Area must be an integer:60.3
+File line 2754: Area must be an integer:60.3
+File line 2755: Area must be an integer:60.3
+File line 2765: Area must be an integer:63.1
+File line 4336: Price must be an integer:568888.88
+File line 7974: Price must be an integer:516888.88

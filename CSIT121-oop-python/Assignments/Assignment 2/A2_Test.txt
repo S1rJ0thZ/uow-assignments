@@ -1,0 +1,234 @@
+from A2 import *
+
+
+def main():
+	testcase_passed_counter = 0
+
+	#Create 3 students
+	student1 = Student("S1", "Student name 1")
+	student2 = Student("S2", "Student name 2")
+	student3 = Student("S3", "Student name 3")
+
+	#Create 3 courses
+	course1 = Course("Code A", "Name A", 6)
+	course2 = Course("Code B", "Name B", 6)
+	course3 = Course("Code C", "Name C", 6)
+
+	#Create 3 results for student 1
+	s1_r1 = CourseResult(student1, course1, 97, 96)
+	s1_r2 = CourseResult(student1, course2, 79, 81)
+	s1_r3 = PracticalResult(student1, course3, 81, 82, 83)
+
+	#Create 3 results for student 2
+	s2_r1 = CourseResult(student2, course1, 85, 87)
+	s2_r2 = CourseResult(student2, course2, 65, 66)
+	s2_r3 = PracticalResult(student2, course3, 76, 72, 73)
+
+	#Create 3 results for student 3
+	s3_r1 = CourseResult(student3, course1, 55, 57)
+	s3_r2 = CourseResult(student3, course2, 65, 66)
+	s3_r3 = PracticalResult(student3, course3, 36, 32, 23)
+
+	print("Test Result get_gpa() static method")
+	s1_results = [s1_r1, s1_r2, s1_r3]
+	s1_gpa = Result.get_gpa(s1_results)
+	if(s1_gpa == 3.33):
+		print("get_spa() test 1 passed")
+		testcase_passed_counter += 1
+	else:
+		print("get_spa() test 1 failed")
+
+	s2_results = [s2_r1, s2_r2, s2_r3]
+	s2_gpa = Result.get_gpa(s2_results)
+	if(s2_gpa == 2.53):
+		print("get_spa() test 2 passed")
+		testcase_passed_counter += 1
+	else:
+		print("get_spa() test 2 failed")
+
+	s3_results = [s3_r1, s3_r2, s3_r3]
+	s3_gpa = Result.get_gpa(s3_results)
+	if(s3_gpa == 1.1):
+		print("get_spa() test 3 passed")
+		testcase_passed_counter += 1
+	else:
+		print("get_spa() test 3 failed")
+	print("#" * 30)
+
+	#Create an AcadTerm
+	term = "2024 Q3"
+	start_date = datetime(2024, 10, 1)
+	end_date = datetime(2024, 12, 30)
+	studentList = [student1, student2, student3]
+	courseList = [course1, course2, course3]
+	acadterm = AcadTerm(term, start_date, end_date, studentList, courseList)
+
+	print("Test AcadTerm add_result(result) - Part 1")
+	#add a new student result - should get back true
+	r = acadterm.add_result(s1_r1)
+	if(r):
+		print("add_result(result) test 1 passed")
+		testcase_passed_counter += 1
+	else:
+		print("add_result(result) test 1 failed")
+
+	#add the same student result again - should get back false
+	r = acadterm.add_result(s1_r1)
+	if(not r):
+		print("add_result(result) test 2 passed")
+		testcase_passed_counter += 1
+	else:
+		print("add_result(result) test 2 failed")
+
+	print("#" * 30)
+	#remove an existing student result in AcadTerm, - should get back true
+	print("Test AcadTerm remove_result(student name, course code) ")
+	r = acadterm.remove_result("S1", "Code A")
+	if(r):
+		print("remove_result(student name, course code) test 1 passed")
+		testcase_passed_counter += 1
+	else:
+		print("remove_result(student name, course code) test 1 failed")
+
+	#remove the previous/non existing result from AcadTerm again - should get back False"
+	r = acadterm.remove_result("S1", "Code A")
+	if(not r):
+		print("remove_result(student name, course code) test 2 passed")
+		testcase_passed_counter += 1
+	else:
+		print("remove_result(student name, course code) test 2 failed")
+
+	print("#" * 30)
+	#Add the 3 students results to AcadTerm
+	print("Add 3 students results to AcadTerm")
+	r1 = acadterm.add_result(s1_r1)
+	r2 = acadterm.add_result(s1_r2)
+	r3 = acadterm.add_result(s1_r3)
+	r4 = acadterm.add_result(s2_r1)
+	r5 = acadterm.add_result(s2_r2)
+	r6 = acadterm.add_result(s2_r3)
+	r7 = acadterm.add_result(s3_r1)
+	r8 = acadterm.add_result(s3_r2)
+	r9 = acadterm.add_result(s3_r3)
+	if(r1 and r2 and r3 and r4 and r5 and r6 and r7 and r8 and r9):
+		print("Add 3 students results to AcadTerm passed")
+		testcase_passed_counter += 1
+	else:
+		print("Add 3 students results to AcadTerm failed")
+	print("#" * 30)
+
+	#Test AcadTerm add_result(Result) with student id not in student list - return False")
+	print("Test AcadTerm add_result(result) - Part 2")
+	student4 = Student("S4", "Student name 4")
+	s4_r1 = CourseResult(student4, course1, 55, 50)
+	r = acadterm.add_result(s4_r1)
+	if(not r):
+		print("add_result(result) test 3 passed")
+		testcase_passed_counter += 1
+	else:
+		print("add_result(result) test 3 failed")
+
+	#Test AcadTerm add_result(Result) with course id not in course list - return False")
+	course4 = Course("Code D", "Name D", 6)
+	s1_r4 = CourseResult(student3, course4, 55, 50)
+	r = acadterm.add_result(s1_r4)
+	if(not r):
+		print("add_result(result) test 4 passed")
+		testcase_passed_counter += 1
+	else:
+		print("add_result(result) test 4 failed")
+
+	print("#" * 30)
+	print("Test AcadTerm get_result(student id)")
+	#Get a student id S1 result from AcadTerm - return s1_r1,s1_r2,s1_r3
+	r = acadterm.get_result("S1")
+	r = compare_list(r, [s1_r1, s1_r2, s1_r3])
+	if(r):
+		print("get_result(student id) test 1 passed")
+		testcase_passed_counter += 1
+	else:
+		print("get_result(student id) test 1 failed")
+
+	#Get an invalid student result from AcadTerm - return None
+	r = acadterm.get_result("S4")
+	if(r == None):
+		print("get_result(student id) test 2 passed")
+		testcase_passed_counter += 1
+	else:
+		print("get_result(student id) test 2 failed")
+
+	#Get student 3 Course Code A result from AcadTerm - return s3_r1
+	r = acadterm.get_result("S3", "Code A")
+	if(r == s3_r1):
+		print("get_result(student id) test 3 passed")
+		testcase_passed_counter += 1
+	else:
+		print("get_result(student id) test 3 failed")
+
+	#Get an Invalid student Course Code A result from AcadTerm - return None
+	r = acadterm.get_result("S4", "Code A")
+	if(r == None):
+		print("get_result(student id) test 4 passed")
+		testcase_passed_counter += 1
+	else:
+		print("get_result(student id) test 4 failed")
+
+	#Get an student 3 with invalid Course Code result from AcadTerm - return None
+	r = acadterm.get_result("S1", "Code D")
+	if(r == None):
+		print("get_result(student id) test 5 passed")
+		testcase_passed_counter += 1
+	else:
+		print("get_result(student id) test 5 failed")
+
+	print("#" * 30)
+	print(f"Test cases passed: {testcase_passed_counter} of 15 passed")
+
+
+def compare_list(list1, list2):
+	if(len(list1) != len(list2)):
+		return False
+	set1 = set(list1)
+	set2 = set(list2)
+	if(set1 == set2):
+		return True
+	else:
+		return False
+
+
+if __name__ == "__main__":
+	main()
+
+
+"""
+You should get the following output if all the test cases passed
+
+Test Result get_gpa() static method
+get_spa() test 1 passed
+get_spa() test 2 passed
+get_spa() test 3 passed
+##############################
+Test AcadTerm add_result(result) - Part 1
+add_result(result) test 1 passed
+add_result(result) test 2 passed
+##############################
+Test AcadTerm remove_result(student name, course code) 
+remove_result(student name, course code) test 1 passed
+remove_result(student name, course code) test 2 passed
+##############################
+Add 3 students results to AcadTerm
+Add 3 students results to AcadTerm passed
+##############################
+Test AcadTerm add_result(result) - Part 2
+add_result(result) test 3 passed
+add_result(result) test 4 passed
+##############################
+Test AcadTerm get_result(student id)
+get_result(student id) test 1 passed
+get_result(student id) test 2 passed
+get_result(student id) test 3 passed
+get_result(student id) test 4 passed
+get_result(student id) test 5 passed
+##############################
+Test cases passed: 15 of 15 passed
+"""

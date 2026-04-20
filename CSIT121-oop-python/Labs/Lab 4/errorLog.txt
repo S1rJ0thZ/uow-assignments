@@ -1,0 +1,5 @@
+Line 11: Marks must be a digit: XX
+Line 13: Marks must be a digit: yy
+Line 18: Marks must inside range of 1-100: 101
+Line 19: Marks must inside range of 1-100: -10
+Line 20: Marks must inside range of 1-100: -90

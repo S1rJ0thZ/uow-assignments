@@ -1,0 +1,5 @@
+File line 10: Price must be a positive integer:-10.0
+File line 11: Area must be an integer:BIG
+File line 14: Area must be an integer:5X
+File line 17: Price must be a positive integer:-200000.0
+File line 21: Price must be an integer:Expensive

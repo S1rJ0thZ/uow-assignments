@@ -1,0 +1,17 @@
+There is an error in the sample output previously provided
+ 
+The output should be:
+1 Prog101_1 t1@email.com 6950
+2 Prog101_1 t2@email.com 3475.0
+3 Prog101_1 t3@email.com 4170.0
+4 Prog101_1 t4@email.com 4865.0
+5 DB102_2 t1@email.com 6050
+6 DB102_2 t2@email.com 3025.0
+7 DB102_2 t3@email.com 3630.0
+8 DB102_2 t4@email.com 4235.0
+Enrolment not found!
+For the full couse fee calculation: 
+The full course fee for Prog101_1 is 6950
+(2000+3*800+3*850 = 6950)
+The full course fee for DB102_2 is 6050
+(1800+5*805 = 6050)
